@@ -1,0 +1,97 @@
+<h1 align=center>basic web page by stephen </h1> 
+
+
+
+This is a webpage<br>
+
+
+<div id="myquestion">?</div>
+<input type=button value="click me" onclick="{
+    document.getelementById( ' myquestion').innerHTML = 'Hello World'
+}"><br>
+
+
+
+my picture <br> <img src="xddd.jpg" width=400><br>
+Image from the web <br> <img src="http://www.w3schools.com/css/img_fjords.jpg" width=400><br>
+
+<a href="http://www.google.ca">http://www.google.ca</a><br>
+
+This is <b>bold</b> this is <i>italic</i>. This is both <b><i>bold and italic</i></b>
+
+<br>
+
+<table style="width:50%"
+<table border=5
+<tr><td>First name</td><td>Last name</td><td>Age</td></tr>
+<tr><td>Stephen</td><td>Campbell</td><td>17</td></tr>
+
+<br>
+
+List of fav foods
+<ul>
+    <li>Pizza</li>
+    <li>KD</li>
+    <li>Ice cream</li>
+    <li>Burger</li>
+    <li>Lobster</li>
+</ul>
+
+<br>
+
+
+<div id="myDiv01" style="position:relative;left:0;top:0;">wow</div>
+
+
+<input type=button value="Go Left" onclick="{
+  my01 = document.getElementById('myDiv01')
+  my01.style.left = parseInt(my01.style.left) - 20 + 'px'
+  
+  }">
+  
+<input type=button value="Go Right" onclick="{
+  my01 = document.getElementById('myDiv01')
+  my01.style.left = parseInt(my01.style.left) + 20 + 'px'
+  
+  }">
+  
+<input type=button value="Go Down" onclick="{
+  my01 = document.getElementById('myDiv01')
+  my01.style.top = parseInt(my01.style.top) + 20 + 'px'
+  
+  }">
+  
+<input type=button value="Go Up" onclick="{
+  my01 = document.getElementById('myDiv01')
+  my01.style.top = parseInt(my01.style.top) - 20 + 'px'
+  
+  }">
+  
+<input type=button value="Go Up Right" onclick="{
+  my01 = document.getElementById('myDiv01')
+  my01.style.top = parseInt(my01.style.top) - 20 + 'px'
+  my01.style.left = parseInt(my01.style.left) + 20 + 'px'
+  
+  
+  }">
+  
+<input type=button value="Go Up Left" onclick="{
+  my01 = document.getElementById('myDiv01')
+  my01.style.top = parseInt(my01.style.top) - 20 + 'px'
+  my01.style.left = parseInt(my01.style.left) - 20 + 'px'
+  
+  }">
+  
+<input type=button value="Go Down Right" onclick="{
+  my01 = document.getElementById('myDiv01')
+  my01.style.top = parseInt(my01.style.top) + 20 + 'px'
+  my01.style.left = parseInt(my01.style.left) + 20 + 'px'
+  
+  }">
+  
+<input type=button value="Go Down Left" onclick="{
+  my01 = document.getElementById('myDiv01')
+  my01.style.top = parseInt(my01.style.top) + 20 + 'px'
+  my01.style.left = parseInt(my01.style.left) - 20 + 'px'
+  
+  }">
