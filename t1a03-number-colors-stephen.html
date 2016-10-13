@@ -1,0 +1,26 @@
+T1A03-Color.html
+
+
+
+
+<h1 align=center>t1a03-color by Stephen </h1>
+<input id="myInput" type=text value="12"> <br><br>
+
+
+<input type=button value="Loop Add" onclick="{
+  myOut = document.getElementById('myArea')
+  myIn  = document.getElementById('myInput')
+  myOut.innerHTML = ''
+
+  for (myCount = 1; myCount <= myIn.value; myCount++){
+    if (myCount == 2 ){
+      myOut.innerHTML +='<font color=red>' + myCount + '</font></br>'
+    } else myOut.innerHTML += myCount + '</br>'
+  }
+}"> <br><br>
+
+<input type=button value="show Div after clicking Loop Add" onclick="{  
+   alert(myOut.innerHTML)
+}">
+
+<div id="myArea" > Your output  will  go here <br></div> <br>
