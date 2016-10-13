@@ -1,0 +1,59 @@
+<h1 align=center>Spy program by Stephen</h1>
+
+
+Write your private ideas here<br>
+<textarea id="myArea1" rows=5 cols=70>This is good</textarea><br><br>
+
+<input type=button value=encrypt onclick="{
+   myStart = document.getElementById('myArea1').value.toUpperCase()
+    //alert(myStart.toString().length)
+    myTemp = ' ' 
+
+
+     for(myLoop = 0;myLoop <= myStart.toString().length;myLoop++){
+       if (myStart[myLoop] == 'A'){myTemp = 'B'}
+       if (myStart[myLoop] == 'B'){myTemp = 'C'}
+       if (myStart[myLoop] == 'C'){myTemp = 'D'}
+       if (myStart[myLoop] == 'D'){myTemp = 'E'}
+       if (myStart[myLoop] == 'E'){myTemp = 'F'}
+       if (myStart[myLoop] == 'F'){myTemp = 'G'}
+       if (myStart[myLoop] == 'G'){myTemp = 'H'}
+       if (myStart[myLoop] == 'H'){myTemp = 'I'}
+       if (myStart[myLoop] == 'I'){myTemp = 'J'}
+       if (myStart[myLoop] == 'J'){myTemp = 'K'}
+       if (myStart[myLoop] == 'K'){myTemp = 'L'}
+       if (myStart[myLoop] == 'L'){myTemp = 'M'}
+       if (myStart[myLoop] == 'M'){myTemp = 'N'}
+       if (myStart[myLoop] == 'N'){myTemp = 'O'}
+       if (myStart[myLoop] == 'O'){myTemp = 'P'}
+       if (myStart[myLoop] == 'P'){myTemp = 'Q'}
+       if (myStart[myLoop] == 'R'){myTemp = 'S'}
+       if (myStart[myLoop] == 'S'){myTemp = 'T'}
+       if (myStart[myLoop] == 'T'){myTemp = 'U'}
+       if (myStart[myLoop] == 'U'){myTemp = 'V'}
+       if (myStart[myLoop] == 'V'){myTemp = 'W'}
+       if (myStart[myLoop] == 'W'){myTemp = 'X'}
+       if (myStart[myLoop] == 'X'){myTemp = 'Y'}
+       if (myStart[myLoop] == 'Y'){myTemp = 'Z'}
+       if (myStart[myLoop] == 'Z'){myTemp = 'A'}
+       
+       
+       document.getElementById('myArea2').value += myTemp
+
+
+}
+   
+   
+}"><br>
+
+The encrypted version to email goes here<br>
+<textarea id="myArea2" rows=5 cols=70></textarea><br><br>
+
+The decryipted reply goes here.<br>
+<input type=button value=decrypt onclick="{
+   alert(document.getElementById('myArea2').value.length)
+   
+   
+}"><br>
+
+<textarea id="myArea3" rows=5 cols=70></textarea><br><br>
