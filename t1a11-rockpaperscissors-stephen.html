@@ -1,0 +1,106 @@
+<h1 align=center  >T1A11-Rock-Paper-Scissors-Stephen.html</h2>
+
+
+<script>
+   document.myTotal = 0
+   document.myWins = 0
+   document.robotWins = 0
+</script>
+
+
+
+
+<input type=button value="Rock" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+    document.myTotal += 1
+   
+   if (document.myRandom == 1){
+       document.myOutcome = 'Tie'
+       
+       
+       }
+       
+   if (document.myRandom == 2){
+       document.myOutcome = 'Player lose'
+       document.robotWins +=1
+       
+       }
+       
+   if (document.myRandom == 3){
+       document.myOutcome = 'Player win'
+       document.myWins +=1
+   }
+   
+   document.getElementById('myOut').innerHTML =' player has won ' + document.myWins + ', bot has won ' +
+   document.robotWins
+    }">
+    
+<input type=button value="Paper" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+    document.myTotal += 1
+   
+   if (document.myRandom == 1){
+       document.myOutcome = 'Player win'
+       document.myWins +=1
+       
+       
+       }
+       
+   if (document.myRandom == 2){
+       document.myOutcome = 'Tie'
+       
+       
+       }
+       
+   if (document.myRandom == 3){
+       document.myOutcome = 'Player lose'
+       document.robotWins +=1
+   }
+   
+    document.getElementById('myOut').innerHTML =' player has won ' + document.myWins + ', bot has won ' +
+   document.robotWins
+}">
+
+<input type=button value="Scissors" onclick="{
+   document.myOutcome = ''
+   document.myRandom = Math.floor(Math.random()*3)+1 
+    document.myTotal += 1
+   
+   if (document.myRandom == 1){
+       document.myOutcome = 'Player loser'
+       document.robotWins +=1
+       
+       
+       }
+       
+   if (document.myRandom == 2){
+       document.myOutcome = 'Player win'
+       document.myWins +=1
+       
+       
+       
+       }
+       
+   if (document.myRandom == 3){
+       document.myOutcome = 'Tie'
+      
+   }
+   
+    document.getElementById('myOut').innerHTML =' player has won ' + document.myWins + ', bot has won ' +
+   document.robotWins
+}">
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="myOut">Output here</div>
