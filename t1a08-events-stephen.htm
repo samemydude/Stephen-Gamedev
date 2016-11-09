@@ -1,0 +1,98 @@
+<h1 align=center >Events by Stephen </h1> 
+
+
+<html>
+<head>
+<style>
+
+div {
+    border: 1px solid black;
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+}
+
+</style>
+</head>
+</html>
+
+
+<script>
+
+function mymouseover() {
+    document.getElementById('myOut1').innerHTML = 'This is a mouse over event'
+}
+function myonclick() {
+    document.getElementById('myOut2').innerHTML = 'This is a on click event'
+}
+
+function mydoubleclick() {
+    document.getElementById('myOut3').innerHTML = 'This is a double click event'
+}
+    
+function mykeypress() {
+    document.getElementById('myOut4').innerHTML = 
+' you pressed the ' + String.fromCharCode(event.keyCode) + ' which is ' + event.keyCode + ' in keyCode '
+
+}
+
+function mySelect() {
+    document.getElementById('myOut5').innerHTML = document.all.myText1.value + ' This is a onselect event.'
+    
+}
+
+function myscroll() {
+    document.getElementById('myOut6').innerHTML = 'This is a on scroll event'
+    
+}
+
+function mycopy()  {
+    document.getElementById('myOut7').innerHTML = 'This is a on copy event'
+    
+}
+
+function mypaste() {
+    document.getElementById('myOut8').innerHTML = document.all.myText2.value + ' This is a on paste event.'
+    
+}
+
+</script>
+<div1 onmouseover= "mymouseover()" id = myOut1>
+Mouse over
+</div1>
+<br><br>
+<div2 onclick= "myonclick()" id = myOut2>
+Click this 
+</div2>
+<br><br>
+<div3 ondblclick= "mydoubleclick()" id = myOut3>
+Double click this
+</div3>
+<br>
+<br>
+<div4 id = myOut4>
+press a key 
+</div4>
+<br><br>
+<input id="myText1" type= text value='select me' onselect="{mySelect()}">
+</input>
+<body onkeypress="{mykeypress()}" onscroll="alert()"></body>
+<br>
+<div5 id = myOut5>
+Selected messages go here
+</div5>
+<br><br>
+<div6 onscroll= myscroll() id = myOut6>
+Scroll 
+</div6>
+<div onscroll="myscroll()">Can't stump the Trump Can't stump the Trump Can't stump the Trump Can't stump the Trump Can't stump the Trump Can't stump the Trump  
+</div>
+<br><br>
+<div8 oncopy= "mycopy()" id = myOut7>
+Copy this
+</div8>
+<br><br>
+<input id="myText2" type= text value=' Paste here ' onpaste="{mypaste()}">
+<br>
+<div9 id = myOut8>
+</div>
