@@ -1,0 +1,39 @@
+<script> 
+
+
+myBgPosY = 0;     // present vertical position
+myBgPosX = 0;    // present horizonal position
+
+
+myBgHeight = 402;    // height of background image
+myBgWidth = 753;  // width of background image
+
+
+myBgSpeedYdown = 3000;    // speed moving down 
+myBgSpeedXright = 0;    // speed moving right
+
+
+
+
+function myScroll() {
+
+
+   myBgPosY +=  myBgSpeedYdown;
+   myBgPosX +=  myBgSpeedXright;
+
+
+   myBgObject.style.backgroundPosition = myBgPosX + " " + myBgPosY;
+}
+
+
+</script>
+
+
+
+
+<body background="its lit fom.jpg" onload="myTimer = setInterval('myScroll()', 100)" >
+<img id=myStuff src="100 fam u know I always keep it savage!!!.png" width= 180> 
+
+<script>        // This object must be after the body tag
+   myBgObject = eval('document.body');
+</script>
